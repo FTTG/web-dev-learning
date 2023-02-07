@@ -26,7 +26,8 @@
         <button type="button">Submit</button>
     </form>
     <p>
-        Button type submit (default) if placed on a form will try to submit the form directly. Type "button" will not submit, will only do what its programmed to. For more check docs.
+        Button type submit (default) if placed on a form will try to submit the form directly. Type "button" will not
+        submit, will only do what its programmed to. For more check docs.
     </p>
     <h2>Testing injecting searches</h2>
     <h3>Search on Reddit</h3>
@@ -76,9 +77,22 @@
         <p>
             <label for="queja">De que te queres quejar?</label>
             <textarea name="queja" id="queja" cols="30" rows="10"></textarea>
-            
+
         </p>
         <button>Submit</button>
+    </form>
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <br>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+        <button>Submit</button>
+        <p>
+            Further validations can be done using the "pattern" attribute to specify lenght and type of characters for
+            example.
+        </p>
     </form>
 </body>
 
