@@ -28,10 +28,23 @@
     <p>
         Button type submit (default) if placed on a form will try to submit the form directly. Type "button" will not submit, will only do what its programmed to. For more check docs.
     </p>
-
+    <h2>Testing injecting searches</h2>
+    <h3>Search on Reddit</h3>
     <form action="https://www.reddit.com/search">
         <input type="text" name="q">
         <button>Search on Reddit</button>
+    </form>
+    <h3>Search on Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search on Google</button>
+    </form>
+    <h3>Search on Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <p>
+            If this form has not button to submit, just hit enter on input and it will work!
+        </p>
     </form>
 </body>
 
