@@ -46,6 +46,40 @@
             If this form has not button to submit, just hit enter on input and it will work!
         </p>
     </form>
+
+    <h2>More Input testing</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" <!--checked-->>
+        <label for="agree">I agree to terms and conditions</label>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="l">L</label>
+            <input type="radio" name="size" id="l" value="l">
+        </p>
+        <p>
+            <label for="naca">Select favorite Nacatamal</label>
+            <select name="naca" id="naca">
+                <option value="" selected>--Elegite una--</option>
+                <option value="cerdo">Cerdo</option>
+                <option value="pavo">Chompipe</option>
+                <option value="ninguno">No me gustan</option>
+            </select>
+        </p>
+        <p>
+            <label for="chile">Chiludito?</label>
+            <br>
+            <input type="range" name="chile" id="chile" min="0" max="10" value="5">
+        </p>
+        <p>
+            <label for="queja">De que te queres quejar?</label>
+            <textarea name="queja" id="queja" cols="30" rows="10"></textarea>
+            
+        </p>
+        <button>Submit</button>
+    </form>
 </body>
 
 </html>
