@@ -13,16 +13,25 @@
     <form action="/burros">
         <div>
             <label for="sabor">Whats your favorite burrito?</label>
-            <input type="text" id="sabor">
+            <input type="text" id="sabor" name="burro">
         </div>
         <div>
             <label for="cuando">When did you last eat a burrito?</label>
-            <input type="date" id="cuando">
+            <input type="date" id="cuando" name="fecha">
         </div>
         <p>
             <label for="color">Te lo hacemos color burguer?</label>
-            <input type="color" id="color">
+            <input type="color" id="color" name="color">
         </p>
+        <button type="button">Submit</button>
+    </form>
+    <p>
+        Button type submit (default) if placed on a form will try to submit the form directly. Type "button" will not submit, will only do what its programmed to. For more check docs.
+    </p>
+
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search on Reddit</button>
     </form>
 </body>
 
