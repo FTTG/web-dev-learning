@@ -1,0 +1,14 @@
+/* Universal selector, selects EVERYTHING, not used too much */
+/* * {
+    background-color: cyan;
+} */
+
+/* element  selector, super common, everything of a type*/
+/* button {
+    font-size: 30px;
+} */
+
+/* Use a comma to combine multiple selectors */
+/* h1,h2 {
+    color: darkslateblue;
+} */
