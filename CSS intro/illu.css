@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    /* font-weight is similar to thickness, 400 normal and 800 is close to bolded */
+    font-weight: 400;
+    /* text-decoration is the most complex, can be used to underline, overline, line-through, etc and how it looks */
+    text-decoration: blue underline wavy;
+    /* letter-spacing is space between letters */
+    letter-spacing: 15px;
+    /* you can use "absolute" units like cms and pixels, but they are not recommened for a responsive website */
+    font-size: 80px;
+    /* Font family sets the font, while having backup options in case that device does not have access to that font */
+    /* You can select a whole font family and it will use any of those as a last backup after a list of fonts */
+    font-family: Segoue UI, Futura;
+}
+
+p {
+    text-align: right;
+    /* line height is "interlineado" from word, can be a number for how many font sizes in height */
+    line-height: normal;
+}
+
+a {
+    /* This removes the underline from links that is there by default */
+    text-decoration: none;
+}
