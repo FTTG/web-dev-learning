@@ -3,12 +3,35 @@
     background-color: cyan;
 } */
 
+body {
+    background-color: #fefae0;
+}
+
 /* element  selector, super common, everything of a type*/
-/* button {
+button {
     font-size: 30px;
-} */
+    background-color: #606c38;
+}
 
 /* Use a comma to combine multiple selectors */
-/* h1,h2 {
-    color: darkslateblue;
-} */
+h1,
+h2 {
+    color: #dda15e;
+}
+
+/* Use # to select the ID of a specific object to style it */
+#signup {
+    background-color: #bc6c25;
+    color: #fefae0;
+}
+
+span {
+    color: #dda15e;
+}
+
+/* use the . to select a CLASS of any group of objects to style them, even if they are different type of objects */
+.tag {
+    background-color: #d4a373;
+    color: #283618;
+    font-size: 16px;
+}
