@@ -1,3 +1,17 @@
 h2 {
-    color: indigo;
+    /* You can use both RGB decimal or hex for colors aside from the named colors */
+    color: #5FCFFC;
+    background-color: rgb(89, 151, 0);
+}
+
+button {
+    /* if both digits of each Hex numbers are the same you can write just those 3, so turn #cc55ee into #c5e */
+    color: #c5e;
+    background-color: cyan;
+}
+
+p {
+    color: olive;
+    /* background can be used instead and it works, but its normally used for much more than just color */
+    background: orange;
 }
