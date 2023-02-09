@@ -23,3 +23,7 @@ a {
     /* This removes the underline from links that is there by default */
     text-decoration: none;
 }
+
+input+button {
+    background-color: pink;
+}

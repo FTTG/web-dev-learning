@@ -35,3 +35,72 @@ span {
     color: #283618;
     font-size: 16px;
 }
+
+/* Changes all "a" tags, inside a class "post". So goest from outer up to the one nested inside to be actually changed */
+/* As we can see, we can combine diferent types of tags on a declaration for style */
+.post a {
+    color: #dda15e;
+}
+
+/* This works even if the "a" is inside multiple things inside the "footer" as long as that its inside a footer */
+footer a {
+    color: #e63946;
+}
+
+/* This changes the button that is right after an input, not needed to be nested. Adjacent selector. */
+input+button {
+    background-color: pink;
+}
+
+/* Selects then "a" that is a direct children of the "footer", direct child method. */
+footer>a {
+    color: #d4a373;
+}
+
+/* you can select based on attribute, so just that type of element that have that type of attribute */
+input[type="password"] {
+    color: greenyellow;
+}
+
+/* You can select a type of tag with a specific class this way. */
+section.post {
+    background-color: purple;
+}
+
+/* Instead of using an "=" for the comparison for an exact match, uses "*+" to say that it includes that text but not exact */
+a[href*="google"] {
+    color: magenta;
+}
+
+/* NOT SHOWN, "$=" instead of just = to select somthing that ends in the given attribute */
+/* With PSEUDO CLASSES you can style based on certain conditions. Like if item is being hovered over, if its active, checked, etc. */
+button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+/* Can be used in combinations as previously studied */
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* Active property is when an item is either being clicked or selected */
+button:active {
+    background-color: #02c39a;
+}
+
+/* Selects the item of that type for the position of the number and just that one, or if adding an "n" to the number, ech nth. */
+.post:nth-of-type(3n) {
+    background-color: #dfe8dc;
+}
+
+/* PSUDO ELEMENTS, write them with :: 2 semicolons, this as used to style things like the first-letter, first-line the placeholder
+,before and after, selection (for things highlighted) etc. */
+h2::first-letter {
+    font-size: 50px;
+}
