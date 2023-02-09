@@ -104,3 +104,12 @@ button:active {
 h2::first-letter {
     font-size: 50px;
 }
+
+/* If 2 styles are affecting the exact same element with that tag, then the last one to be loaded is the one that prevails. */
+/* And no matter the order, the more specific the selection of an item will have priority over a non specific item */
+/* Like a nested selector, or ID or CLASS selector over a normal element selector. Formula= ID > CLASS > ELEMENT. Specificity  */
+/* Can check its value of specificity at specificity.keegan.st */
+button:hover {
+    background-color: olive;
+    font-size: 10px;
+}
