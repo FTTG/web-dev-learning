@@ -113,3 +113,6 @@ button:hover {
     background-color: olive;
     font-size: 10px;
 }
+
+/* The only one that trumps over ID in priority, is inline style. CSS style written inside the HTML tag itself of the element */
+/* Or using the !imporant property on a line of CSS to overwrite other speceficity indicators. */
