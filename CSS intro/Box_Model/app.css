@@ -1,0 +1,37 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+/* sets borders for the for a box on where to fix the content, and where can other content start, while also setting bounds for the style. */
+h1 {
+    background-color: pink;
+    width: 100px;
+}
+
+/* So a border can be shown you need to have a color and style on it, so its actually rendered */
+#one {
+    background-color: #e5989b;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    /* Without border sizing, the width of the element (in here determined in div) would then be increased by the size of the box border */
+    box-sizing: border-box;
+}
+
+#two {
+    background-color: #b5838d;
+    border-color: #ffcdb2;
+    border-width: 3px;
+    border-style: dashed;
+    border-left-width: 8px;
+}
+
+/* using the "border" attribute we can give the element multiple different styles in a single line */
+#three {
+    background-color: #6d6875;
+    border: 4px solid black;
+    border-left-style: dotted;
+    /* we can use the radius to change the edge of the border, either by pixel or %. 50% turns it into a circle */
+    border-radius: 50%;
+}

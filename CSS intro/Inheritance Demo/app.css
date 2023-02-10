@@ -1,0 +1,22 @@
+/* Everything applied to a parent element is applied to the childs. */
+body {
+    color: purple;
+}
+
+/* If they are inheriting from 2 sources, they take the one closest to them (or the more specific one). */
+/* In this case, they get the color from the section that is inside the body, as the section is more specific */
+section {
+    color: aqua;
+}
+
+form {
+    color: green;
+}
+
+/* not all elements inherit by default, like buttons and inputs, but they can be set to inherit as shown below */
+button,
+input {
+    color: inherit;
+}
+
+/* You can check from Developer Mozilla each tag, the blue box below shows the "inherited" property as yes or no */
