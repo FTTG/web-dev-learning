@@ -19,4 +19,27 @@ span {
     width: 500px;
     /* padding is added but it does not move content away around it */
     padding: 10px;
+    /* For inline elements, margin is only respected horizontally. */
+    margin: 50px;
+}
+
+/* Width, padding and margin are all respected on this block element */
+h1 {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    width: 300px;
+    padding: 50px;
+    margin: 100px;
+    /* Set to none this elements are hidden */
+    display: none;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 5px solid black;
+    /* with inline-block, you get block level properties like width and height, but also keeping them positioned one next to the other. */
+    display: inline-block;
+    margin: 50px;
 }
