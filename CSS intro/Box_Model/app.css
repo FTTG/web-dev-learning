@@ -35,3 +35,9 @@ h1 {
     /* we can use the radius to change the edge of the border, either by pixel or %. 50% turns it into a circle */
     border-radius: 50%;
 }
+
+/* We can use "padding", either just padding or padding-top or other sides, to add space between the content and the border of that piece of content. */
+/* We can also use margin to add space between the border of that piece of content and the border of other pieces of content. */
+/* FUN FACT! H1s etc have their own padding by default, as well as the body of the page. */
+/* if used just "padding" or "margin" you can use 1 number for all sides, 2 numbers for vertical, horizontal. 3 numbers for top, horizontal, bottom. */
+/* Lastly you can use 4 digits, for all sides in clockwise order from top. */

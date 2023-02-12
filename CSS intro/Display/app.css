@@ -1,0 +1,22 @@
+/* h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+        Changed h1s so that they are not block elements, but they are inline
+    display: inline;
+}
+
+span {
+    background-color: paleturquoise;
+    border: 1px solid black;
+        Changed spans from inline elements to block level elements.
+    display: block;
+} */
+
+span {
+    background-color: palevioletred;
+    border: 1px solid black;
+    /* width and height is ignored on inline elements. */
+    width: 500px;
+    /* padding is added but it does not move content away around it */
+    padding: 10px;
+}
