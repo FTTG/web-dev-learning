@@ -1,3 +1,7 @@
+html {
+    font-size: 30px;
+}
+
 section {
     background-color: #6d6875;
     width: 800px;
@@ -14,5 +18,61 @@ div {
 h1 {
     font-size: 40px;
     border: 1px solid black;
+    /* In this case, it changes height based on font size, so 200% of 40px, would be a 80px line height. */
     line-height: 200%;
 }
+
+#ems h2 {
+    /* em is a relative size value. Since h2 is inside article, it will escalte to 2em, or 2 times the size of the parent, so 2 times the 30px on the article. */
+    font-size: 2em;
+    /* For Margin, it will not be based on the margin of the parent, but in relation to the font of the element. So same as the font-size. If you change font-size the margin would change. */
+    margin-left: 1em;
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+#ems p {
+    font-size: 1em;
+}
+
+article {
+    font-size: 30px;
+}
+
+#ems button {
+    /* Font size change based on parent */
+    font-size: 1em;
+    /* Padding change based on font size again. */
+    padding: 0 1em;
+    /* Change based on font size. Everything would change with font-size */
+    /* Even if you have multiple buttons in different places, even if they share the button CSS section, they would be different size based on their parent in HTML */
+    border-radius: 0.5em;
+    background-color: #2a9d8f;
+    color: white;
+}
+
+#ems ul {
+    /* If you have nested ULs (or any other element), changing the size of one by "em"s changes the size of the nested ones exponentially, as they continue multiplying */
+    font-size: 1.5em;
+}
+
+/* Introducing rem. They are root ems, so they change the size based on the root html element. Whatever your size your html tag has, this works based on that. Easier to work with. */
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.8rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}
+
+/* Rems are nice for general use, and EMs are nice for use on specific things, like the radius of a button, that works in reference to the font of the button. */
