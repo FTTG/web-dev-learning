@@ -1,0 +1,46 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: #81b29a;
+}
+
+#static #middle {
+    /* Static position just leaves the item where its at, so even if you try to change it with top it won't move */
+    position: static;
+    top: 10px;
+}
+
+#relative #middle {
+    /* now with position relative, you can move it with top, bottom, left or right, relative to his original position */
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+#absolute {
+    position: relative;
+}
+
+#absolute #middle {
+    /* In absolute position, the item stops taking over his normally assigned space in the flow of the html */
+    position: absolute;
+    /* It is moved in relation to either the body or if its nested to a position element (not static) to that element */
+    top: 50px;
+    left: 50px;
+}
+
+#fixed #middle {
+    /* Fixed position also removes it from the flow like absolute. Relative to the containing block EVEN IF YOU SCROLL DOWN. Fixed on the display */
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+/* lastly there is a position: sticky, and it stays static while on the page, but if you scroll past it, it sticks to the top and stays in display */
