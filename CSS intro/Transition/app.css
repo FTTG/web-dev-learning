@@ -1,0 +1,46 @@
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: magenta;
+    /* With this property, when this magenta square changes to a cyan circle when hovered, its not like 2 images, but a visible transition */
+    /* transition: 3s; */
+    /* You can specifiy what property will transition, the time to complete, and delay to start transition. Can comma separate multiple properties */
+    transition: background-color 3s 1s, border-radius 2s;
+}
+
+/* best practice, single out properties you want to transition instead of changing all */
+
+.circle:hover {
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+section div {
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    margin: 20px 0;
+    transition: margin-left 3s;
+}
+
+section:hover div {
+    margin-left: 500px;
+}
+
+/* Transiton timing changes how the transition performs, either sarting slow, or slowing down */
+div:nth-of-type(1) {
+    transition-timing-function: ease-in;
+}
+
+div:nth-of-type(2) {
+    transition-timing-function: ease-out;
+}
+
+/* You can even use math equations to graph its transition, you can find the numbers in easings.net */
+div:nth-of-type(3) {
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+div:nth-of-type(4) {
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+}
