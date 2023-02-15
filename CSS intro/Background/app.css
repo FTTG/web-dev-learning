@@ -1,0 +1,18 @@
+section {
+    width: 80%;
+    height: 800px;
+    /* background-image: url("https://images.unsplash.com/photo-1676454894072-fcb03c419cfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+    types of background size change weather the image is scaled, repeated, cropped, etc
+    background-size: cover;
+    Selects from where the image will start being loaded on the backgroun
+    background-position: bottom; */
+    /* This can all be merged into a single "background" property, and orden does not matter in this case with the EXCEPTION */
+    /* of brackground size, to be used right after position with a / in the middle */
+    background: center/40% no-repeat url("https://images.unsplash.com/photo-1676454894072-fcb03c419cfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80") purple;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+}
