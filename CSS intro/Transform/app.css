@@ -1,0 +1,45 @@
+h1 {
+    background-color: #2a9d8f;
+    border: 5px solid #264653;
+    color: #eae2b7;
+    padding: 0.7em;
+    width: 300px;
+    font-size: 1.8em;
+    text-align: center;
+    /* By adding auto margin horizontally it will automatically center the item. */
+    margin: 20px auto;
+    font-family: Courier New;
+    font-weight: lighter;
+}
+
+section:first-of-type h1:nth-of-type(1) {
+    transform: rotate(45deg);
+    /* by default they rotate from center of the item, but this can be changed */
+    transform-origin: top left;
+    /* you can rotateX, rotateY and rotateZ to rotate on that Axis */
+}
+
+section:first-of-type h1:nth-of-type(2) {
+    /* If only a single number is given, scales overall, 2 scales on sides and vertical  */
+    transform: scale(2, 1);
+    /* You can also specicify as scaleY, scaleX and scaleZ */
+}
+
+section:first-of-type h1:nth-of-type(3) {
+    /* Translate moves the item and same as others has an X and Y variant */
+    transform: translate(-100px, 50px);
+}
+
+section:first-of-type h1:nth-of-type(4) {
+    /* Similar to rotate, but rotates the item on itself, X and Y values. */
+    transform: skew(10deg, 5deg);
+}
+
+section:nth-of-type(2) h1:nth-of-type(2) {
+    /* By using a space you can combine multiple properties */
+    transform: rotate(20deg) scale(1.3);
+}
+
+section:nth-of-type(2) h1:nth-of-type(3) {
+    transform: translateX(-500px) rotate(0.5turn) scaleY(1.5);
+}
