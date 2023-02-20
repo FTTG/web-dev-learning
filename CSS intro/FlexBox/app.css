@@ -1,0 +1,68 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+    /* this turns on the flex box */
+    display: flex;
+    /* flex direction sets the direction of the items, either on rows, the row but reversed placing them right to left, then column from top to bottom and column-reverse */
+    /* flex-direction: row-reverse; */
+    flex-direction: column-reverse;
+    /* justify content does not change the content itself, but where its position. Like moving a box to a different corner. 
+    Kind of like text justification, left aligned, centered or right aligned */
+    /* justify-content: (some options) center, start, end, flex-start, left, space-between (adds margin between elements but not on item itself edge. 
+    Review all on Mozilla website. */
+    justify-content: center;
+    /* if content does not fit, instead of squeezing in, it wraps around to next "row" or "column" (based on flex-direction) like wrapping text */
+    /* It can be wrap or wrap-reverse, with reverse it changes based on the "cross-axix". the other axis on the flex box model. It can also be no-wrap */
+    flex-wrap: wrap;
+    /* Alingns smae as justify-content, but based on the cross axis instead of main axis */
+    /* baseline does it based on content inside items. */
+    /* with flex-wrap we change direction of cross axis, so it affects how we align items. */
+    align-items: baseline;
+    /* With align content we are changing the space between the content on cross axis, same as justify content */
+    align-content: center;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    /* flex basis sets the initial size an element is added to the flex box as. This can be width of height, depending on the main axis. */
+    flex-basis: 400px;
+
+}
+
+div:nth-of-type(3) {
+    /* This is to change the alignement of a single item within the flexbox but in relation to the ones around it, not to the box itself*/
+    align-self: flex-end;
+}
+
+div:nth-of-type(1) {
+    /* flex grows allows them to grow to eat any space that might be leftover. */
+    flex-grow: 1;
+    /* with max width or min width you can set a limit to how much it can grow */
+    max-width: 300px;
+}
+
+div:nth-of-type(5) {
+    /* the number is in relation to other flex grow item, how to distribute the empty space.
+    If one item with 1 and one item with value 2 on flex grow, it distrubutes 1 to 2 free space to each item. */
+    flex-grow: 2;
+}
+
+div:nth-of-type(3) {
+    /* This time, if the space is smaller and items need to change and shrink to fix, this sets how much more this one shrinks in comparison to the othe items. */
+    /* if flex-shrink = 0 then it wont shrink */
+    flex-shrink: 2;
+}
+
+/* with FLEX, just flex: property, we can set all grow, shrink and basis on a single line in that order. 
+And basis is the only that that uses size units, and it can be recognized. Check MD docs for clarification */

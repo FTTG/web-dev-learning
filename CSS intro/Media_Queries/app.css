@@ -1,0 +1,46 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+nav {
+    font-size: 1.5em;
+}
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/* REARELY used, since it ONLY works on EXACTLY 800 px, more common is min-width and max-width */
+/* @media (width: 800px) {
+    h1 {
+        color: purple;
+    }
+} */
+
+/* min-width states, from 600px and UP use purple */
+/* Can combine with AND to add multiple conditionals */
+/* @media (min-width: 600px) and (max-width: 800px) {
+    h1 {
+        color: purple;
+    }
+} */
+
+
+@media (max-width: 500px) {
+    h1 {
+        color: red;
+    }
+}
+/* We are now overwriting, and it woont work on "scales" */
+@media (max-width: 1000px) {
+    h1 {
+        color: orange;
+    }
+}
