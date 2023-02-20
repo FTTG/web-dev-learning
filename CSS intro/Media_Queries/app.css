@@ -9,9 +9,20 @@ h1 {
 
 nav {
     font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
 }
 
-ul,li {
+ul {
+    border: 1px solid red;
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul,
+li {
     display: inline;
     margin: 0;
     padding: 0;
@@ -38,9 +49,36 @@ ul,li {
         color: red;
     }
 }
-/* We are now overwriting, and it woont work on "scales" */
+
+/* We are now overwriting, and it wont work on "scales" */
+/* To fix: either invert order in code, or provide specific ranges */
 @media (max-width: 1000px) {
     h1 {
         color: orange;
+    }
+}
+
+/* This is to change on landscape orientation */
+/* @media (orientation: landscape) {
+    body {
+        background-color: magenta;
+    }
+} */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+
+    nav,
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3em;
     }
 }

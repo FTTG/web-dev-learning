@@ -1,9 +1,11 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
 h1 {
     text-align: center;
 }
+
 #container {
     background-color: #003049;
     width: 90%;
@@ -23,7 +25,7 @@ h1 {
     /* if content does not fit, instead of squeezing in, it wraps around to next "row" or "column" (based on flex-direction) like wrapping text */
     /* It can be wrap or wrap-reverse, with reverse it changes based on the "cross-axix". the other axis on the flex box model. It can also be no-wrap */
     flex-wrap: wrap;
-    /* Alingns smae as justify-content, but based on the cross axis instead of main axis */
+    /* Align same as justify-content, but based on the cross axis instead of main axis */
     /* baseline does it based on content inside items. */
     /* with flex-wrap we change direction of cross axis, so it affects how we align items. */
     align-items: baseline;
