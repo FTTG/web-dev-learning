@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap basics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-1">Bootstrap Playground</h1>
+        <!-- badge is a bootstrap class that adds to spans little extra info insight text like a notification. Like reddit tags or number of notifications inside an icon or button -->
+        <h2 class="dislay-4">Buttons <span class="badge badge-success">New</span></h2>
+        <!-- We use the classes to define the style based on the Bootstrap documentation. Adding multiple classes separated by a space to define multiple things -->
+        <!-- for example on buttons, we add class btn to define it as a button style, and then things like btn-primary for a more specific style and btn-lg for size -->
+        <button type="button" class="btn btn-primary">Primary <span class="badge badge-success badge-pill"></span>new</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-outline-warning">Warning outline</button>
+        <button type="button" class="btn btn-outline-danger">Danger outline</button>
+        <button type="button" class="btn btn-outline-info btn-lg">Large info outline</button>
+        <button type="button" class="btn btn-success" disabled>Success Disabled</button>
+        <button type="button" class="btn btn-primary">Updates <span class="badge badge-light">9</span></button>
+
+        <h3>Button Groups</h3>
+        <!-- the btn-group on a div, groups all buttons together so they look like a single button split -->
+        <div class="btn-group">
+            <button class="btn btn-warning">One</button>
+            <button class="btn btn-danger">Two</button>
+            <button class="btn btn-warning">Three</button>
+        </div>
+        <!-- Typography sections has also a lot of info on how to display text, like class lead for a main paragraph, or mb-0 to change margin at bottom -->
+        <h2 class="display-4">Typography</h2>
+        <p class="lead">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti labore ratione voluptatum nemo deserunt totam, quaerat suscipit cumque omnis quidem. Magni est tenetur ea omnis inventore rerum odio eveniet doloribus.
+            Placeat ab, quos nam reiciendis, cupiditate nemo quae molestias accusantium quibusdam labore alias numquam? Vel dolorem, quos sit ab adipisci culpa incidunt perspiciatis quod similique, cum aliquam repellendus eligendi laboriosam.
+            Voluptatibus illum, optio veniam fuga delectus ab aut officia quis nihil provident assumenda reprehenderit nisi! Rerum, ad nihil. Voluptatem fuga neque nihil modi nesciunt vero id minima vitae, incidunt et?
+        </p>
+        <blockquote class="blockquote text-right">
+            <p class="mb-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nesciunt dolores ullam, architecto tempora eos voluptate veniam libero sunt corrupti maiores repellendus illo rerum pariatur cum quia quibusdam sapiente qui!
+            </p>
+            <footer class="blockquote-footer">Mr. Lorem Ipsum</footer>
+        </blockquote>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
