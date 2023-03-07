@@ -31,6 +31,19 @@
             <button class="btn btn-danger">Two</button>
             <button class="btn btn-warning">Three</button>
         </div>
+        <!-- We add a div to show the alert across the screen with the alert class. And then we can add a button class "close" so we can close the alert -->
+        <!-- The fade and show classes just make the closing more smooth and move the button position to the top right corner -->
+        <!-- Lastly, the "role" attribute is also for accesibility -->
+        <h3>Alerts</h3>
+        <div class="alert alert-danger fade show" role="alert">
+            <h4 class="alert-heading">Oh no!</h4>
+            Danger! You are about to end the world as we know it!
+            <!-- The "aria" attributes are mostly for screen readers and accesibility -->
+            <!-- Adding the data-dismiss alert attribute we make it so with JaveScript it closes the alert on press of the button -->
+            <button aria-label="Close" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
         <!-- Typography sections has also a lot of info on how to display text, like class lead for a main paragraph, or mb-0 to change margin at bottom -->
         <h2 class="display-4">Typography</h2>
         <p class="lead">
